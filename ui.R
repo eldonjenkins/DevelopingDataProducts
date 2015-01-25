@@ -15,7 +15,8 @@ shinyUI(
                submitButton('Submit')
           ),
           mainPanel(
-               h3('Prediction Results:'),
+               h3('Predicted Weight in Ounces: '),
+               verbatimTextOutput("prediction"),
                h4('You entered the following details:'),
                h4('Mother\'s Height:'),
                verbatimTextOutput("ht"),
@@ -28,9 +29,7 @@ shinyUI(
                h4('Marital Status:'),
                verbatimTextOutput("marital"),
                h4('Does Mother Smoke:'),
-               verbatimTextOutput("smoke"),
-               h4('Predicted Weight in Ounces: '),
-               verbatimTextOutput("prediction")
+               verbatimTextOutput("smoke")
           )
      )     
      
